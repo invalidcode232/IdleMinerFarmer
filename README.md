@@ -52,9 +52,9 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-2. Install NPM packages
+2. Install the packages
    ```sh
-   npm install
+   pip install <package name>
    ```
 3. Enter your credentials in `config.json`, you can also configure the settings for the farmer there.  
 <p align="right">(<a href="#top">back to top</a>)</p>
