@@ -1,0 +1,38 @@
+{
+  "token": "",
+  "channel_id": "",
+
+  "auto_sell": {
+    "enabled": true,
+    "base": 5,
+    "randomization": 5
+  },
+  "auto_upgrade": {
+    "enabled": true,
+    "upgrade_after": 3
+  },
+  "auto_rebirth": {
+    "enabled": true,
+    "rebirth_after": 30
+  },
+  "auto_fish": {
+    "enabled": true,
+    "base": 300,
+    "randomization": 30
+  },
+  "auto_hunt": {
+    "enabled": true,
+    "base": 300,
+    "randomization": 30
+  },
+  "auto_quiz": {
+    "enabled": true,
+    "base": 300,
+    "randomization": 30
+  },
+  "auto_hourly": {
+    "enabled": true,
+    "base": 3600,
+    "randomization": 300
+  }
+}
