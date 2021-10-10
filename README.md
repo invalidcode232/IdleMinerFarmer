@@ -15,7 +15,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Autominer is an easy-to-use Idle Miner farmer with scalability in mind.  
+Autominer is an easy-to-use Idle Miner farmer, built with scalability in mind.  
 It uses an object orientated approach for all of its functionalities, making it easy to modify/add existing features.
 
 <b>Features</b>
