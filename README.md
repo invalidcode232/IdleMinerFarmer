@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <h2 align="center">Autominer</h2>
+  <h2 align="center">Idlefarmer</h2>
 
   <p align="center">
     A fully featured Idle Miner bot farmer
@@ -15,7 +15,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Autominer is an easy-to-use Idle Miner farmer, built with scalability in mind.  
+Idlefarmer is an easy-to-use Idle Miner farmer, built with scalability in mind.  
 It uses an object orientated approach for all of its functionalities, making it easy to modify/add existing features.
 
 <b>Features</b>
