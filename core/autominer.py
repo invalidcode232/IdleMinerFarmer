@@ -13,7 +13,7 @@ class Autominer:
         # Bool flip to choose between pickaxe/backpack upgrade
         # False = Pickaxe
         # True = Backpack
-        purchase_flip = False
+        purchases = 0
 
         # Keep track of amount of sells
         sell = 0
@@ -23,12 +23,12 @@ class Autominer:
             sell += 1
 
             if kwargs["auto_upgrade"] is True and sell % kwargs["upgrade_after"] == 0 and sell != 0:
-                if purchase_flip is False:
+                if purchases < 2:
                     self.upgrade_pick()
-                    purchase_flip = True
+                    purchases += 1
                 else:
                     self.upgrade_bp()
-                    purchase_flip = not purchase_flip
+                    purchases = 0
 
             if kwargs["auto_rebirth"] is True and sell % kwargs["rebirth_after"] == 0:
                 self.rebirth()
