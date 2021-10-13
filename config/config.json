@@ -22,8 +22,8 @@
   },
   "auto_hunt": {
     "enabled": true,
-    "base": 300,
-    "randomization": 30
+    "base": 270,
+    "randomization": 10
   },
   "auto_quiz": {
     "enabled": true,
