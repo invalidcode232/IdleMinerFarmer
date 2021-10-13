@@ -1,8 +1,6 @@
 import requests
 import time
 
-import urllib3.exceptions
-
 
 class Discord:
     def __init__(self, token):
