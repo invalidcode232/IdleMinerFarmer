@@ -5,13 +5,13 @@ import json
 
 print(
     "               __          _____                                   \r\n_____   __ ___/  |_  _____/ ____\\____ _______  _____   ___________ \r\n\\__  \\ |  |  \\   __\\/  _ \\   __\\\\__  \\\\_  __ \\/     \\_/ __ \\_  __ \\\r\n / __ \\|  |  /|  | (  <_> )  |   / __ \\|  | \\/  Y Y  \\  ___/|  | \\/\r\n(____  /____/ |__|  \\____/|__|  (____  /__|  |__|_|  /\\___  >__|   \r\n     \\/                              \\/            \\/     \\/      ")
-print("\nGithub: https://github.com/invalidcode232/IdleMinerFarmer | Open an issue for suggestions/bugs reports")
+print("\nGithub: https://github.com/invalidcode232/IdleMinerFarmer | Open an issue for suggestions/bugs reports.")
 
 with open("config/config.json", "r") as json_data:
     config = json.load(json_data)
 
     client = Discord(config['token'])
-    autominer = Autominer(client, config['channel_id'])
+    autominer = Autominer(client, config['channel_id'], config['idle_miner_id'])
 
     # Auto-sell
     # You must enable auto-sell in order for auto-upgrade and auto-rebirth to work

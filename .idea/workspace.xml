@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd3db98f-9610-41e2-a607-9883e9931c6f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/discord.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/discord.py" afterDir="false" />
-    </list>
+    <list default="true" id="dd3db98f-9610-41e2-a607-9883e9931c6f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +38,7 @@
       <updated>1634087876038</updated>
       <workItem from="1634087877053" duration="43000" />
       <workItem from="1634087930489" duration="2369000" />
+      <workItem from="1634132893825" duration="151000" />
     </task>
     <servers />
   </component>

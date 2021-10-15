@@ -1,6 +1,7 @@
 {
   "token": "",
   "channel_id": "",
+  "idle_miner_id": "",
 
   "auto_sell": {
     "enabled": true,

@@ -5,9 +5,18 @@ ANSWERS = ["A", "B", "C", "D"]
 
 
 class Autominer:
-    def __init__(self, client, channel):
+    def __init__(self, client, channel, dm_id):
         self.client = client
         self.channel = channel
+        self.dm_id = dm_id
+
+    def captcha_check(self):
+        messages = self.client.get_messages(self.dm_id, limit=1)
+
+        for message in messages:
+            if "Please enter the following code to prove that you're human" in message['content']:
+                self.client.send_message(self.channel, "Captcha request detected")
+                raise Exception("Captcha request detected")
 
     def auto_sell(self, **kwargs):
         # Bool flip to choose between pickaxe/backpack upgrade
@@ -19,6 +28,8 @@ class Autominer:
         sell = 0
 
         while True:
+            self.captcha_check()
+
             self.client.send_message(self.channel, ";s")
             sell += 1
 
@@ -37,22 +48,39 @@ class Autominer:
             time.sleep(delay)
 
     def auto_fish(self, **kwargs):
+        self.captcha_check()
+
         while True:
+            self.captcha_check()
+
             self.client.send_message(self.channel, ";f")
             time.sleep(kwargs['base'] + randrange(kwargs['randomization']))
 
     def auto_hunt(self, **kwargs):
+        if self.captcha_check() is True:
+            raise Exception("Captcha Request Detected..")
+
         while True:
+            self.captcha_check()
+
             self.client.send_message(self.channel, ";h")
             time.sleep(kwargs['base'] + randrange(kwargs['randomization']))
 
     def auto_hourly(self, **kwargs):
+        self.captcha_check()
+
         while True:
+            self.captcha_check()
+
             self.client.send_message(self.channel, ";hourly")
             time.sleep(kwargs['base'] + randrange(kwargs['randomization']))
 
     def auto_quiz(self, **kwargs):
+        self.captcha_check()
+
         while True:
+            self.captcha_check()
+
             self.client.send_message(self.channel, ";quiz")
             time.sleep(2)
             self.client.send_message(self.channel, ANSWERS[randrange(4)])

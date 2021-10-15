@@ -50,3 +50,14 @@ class Discord:
         else:
             if response.status_code != 200:
                 raise Exception(f"An unknown error occurred while sending message | Status code: {response.status_code}")
+
+    def get_messages(self, channel_id, **kwargs):
+        try:
+            response = requests.get(f"https://discord.com/api/v9/channels/{channel_id}/messages?limit={kwargs['limit']}", headers=self.header)
+        except requests.exceptions.ConnectionError:
+            print("Connection error, this could be an issue with the server or your connection..")
+        else:
+            if response.status_code != 200:
+                raise Exception(f"An unknown error occurred while sending message | Status code: {response.status_code}")
+
+            return response.json()
